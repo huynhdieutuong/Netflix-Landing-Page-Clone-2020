@@ -326,7 +326,7 @@ img {
 }
 
 .questions .faq-list {
-  width: 85%;
+  width: 75%;
   margin: 2em auto;
 }
 
@@ -350,4 +350,89 @@ img {
 
 .questions .faq-list .open .faq-answer {
   display: block;
+}
+
+/* Footer */
+.footer {
+  border-bottom: none;
+  padding-bottom: 2rem;
+}
+
+.footer-wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-wrapper > div {
+  width: 90%;
+  margin: auto;
+}
+
+.footer p a {
+  font-size: 1rem;
+}
+
+.footer a,
+.footer .brand-name {
+  color: #757575;
+  font-size: 0.8rem;
+}
+
+.footer .footer-links {
+  margin-top: 1.8rem;
+}
+
+.footer .footer-links .footer-link-item {
+  display: inline-block;
+  width: 24.6%;
+  margin-bottom: 1rem;
+  padding-right: 0.5rem;
+}
+
+.lang-select {
+  display: inline-block;
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.lang-select::after {
+  content: '\25BC';
+  font-size: 0.9rem;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  pointer-events: none;
+}
+
+.lang-select::before {
+  content: '\25CD';
+  font-size: 1.8rem;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  pointer-events: none;
+}
+
+.lang-select:hover::after,
+.lang-select:hover::before {
+  cursor: pointer;
+}
+
+.lang-select select {
+  border-radius: 3px;
+  border: 1px solid rgba(153, 153, 153, 0.363);
+  background-color: #000;
+  color: #999;
+  padding-left: 3rem;
+  width: 9.5rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+
+.lang-select select:hover {
+  cursor: pointer;
 }
