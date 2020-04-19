@@ -1,0 +1,191 @@
+/* Global Styles */
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+  --light-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Text Styles */
+.text-xl {
+  font-size: 2rem;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+}
+
+.text-md {
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-xl {
+  font-size: 1.8rem;
+  padding: 1.2rem 2rem;
+  text-transform: uppercase;
+}
+
+.btn-lg {
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
+}
+
+/* Header */
+.showcase {
+  width: 100%;
+  height: 93vh;
+  background: url(../img/background.jpg) no-repeat center/cover;
+  position: relative;
+}
+
+.showcase::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 10px 80px 71px 20px rgba(0, 0, 0, 0.5),
+    inset -10px -80px 71px 20px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 8px solid #222;
+}
+
+.showcase > div {
+  position: relative;
+  z-index: 2;
+}
+
+.showcase-top {
+  position: relative;
+  height: 100px;
+}
+
+.showcase-top img {
+  position: absolute;
+  width: 170px;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-top a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.showcase-content {
+  max-width: 950px;
+  text-align: center;
+  margin: auto;
+  margin-top: 9rem;
+}
+
+.showcase-content > h1 {
+  font-size: 4rem;
+  max-width: 650px;
+  margin: auto;
+}
+
+.showcase-content > p {
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+}
+
+.email-form {
+  position: relative;
+  padding: 1rem 0 2.5rem 0;
+}
+
+.email-form > p {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.email-form > div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.email-form i {
+  margin-left: 0.5rem;
+}
+
+.email-form input {
+  width: 30rem;
+  height: 4.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  padding-left: 1rem;
+}
+
+.email-form button {
+  border-radius: 0;
+}

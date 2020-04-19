@@ -1,0 +1,38 @@
+.email-form {
+  position: relative;
+  padding: 1rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.email-form > p {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.email-form > div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.email-form i {
+  margin-left: 0.5rem;
+}
+
+.email-form input {
+  width: 30rem;
+  height: 4.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  padding-left: 1rem;
+}
+
+.email-form button {
+  border-radius: 0;
+}
