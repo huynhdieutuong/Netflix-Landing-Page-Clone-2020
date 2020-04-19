@@ -1,8 +1,3 @@
-.animation-card {
-  border-bottom: 8px solid #222;
-  padding: 4rem 3rem;
-}
-
 .animation-card .card-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,13 +10,7 @@
   justify-content: center;
 }
 
-.animation-card .card-content .card-text h2 {
-  font-size: 3.1rem;
-  line-height: 1.1;
-}
-
 .animation-card .card-content .card-text p {
-  font-size: 1.6rem;
   margin-top: 1.5rem;
 }
 

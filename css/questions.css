@@ -1,0 +1,35 @@
+.questions {
+  padding: 4rem 3rem;
+}
+
+.questions h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.questions .faq-list {
+  width: 85%;
+  margin: 2em auto;
+}
+
+.questions .faq-list .faq-list-item {
+  margin-bottom: 8px;
+}
+
+.questions .faq-list .faq-question {
+  margin-bottom: 1px;
+  display: flex;
+  cursor: pointer;
+}
+
+.questions .faq-list .faq-question span {
+  flex-grow: 1;
+}
+
+.questions .faq-list .faq-answer {
+  display: none;
+}
+
+.questions .faq-list .open .faq-answer {
+  display: block;
+}

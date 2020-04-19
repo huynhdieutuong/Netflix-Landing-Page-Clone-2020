@@ -9,24 +9,27 @@
   <link rel="stylesheet" href="css/global-style.css">
   <link rel="stylesheet" href="css/email-form.css">
   <link rel="stylesheet" href="css/animation-card.css">
+  <link rel="stylesheet" href="css/questions.css">
 </head>
 
 <body>
   <!-- Email Form -->
-  <form action="#" class="email-form">
-    <p class="text-form">Ready to watch? Enter your email to create or access your account.</p>
-    <div>
-      <input type="text" placeholder="Email address">
-      <button type="submit" class="btn btn-xl">Try it now <i class="fas fa-chevron-right"></i></button>
-    </div>
-  </form>
+  <div class="our-story-card">
+    <form action="#" class="email-form">
+      <p class="text-form text-sm">Ready to watch? Enter your email to create or access your account.</p>
+      <div>
+        <input type="text" placeholder="Email address">
+        <button type="submit" class="btn btn-xl">Try it now <i class="fas fa-chevron-right"></i></button>
+      </div>
+    </form>
+  </div>
 
   <!-- Animation Card -->
-  <div id="card-1" class="animation-card">
+  <div id="card-1" class="animation-card our-story-card">
     <div class="container card-content">
       <div class="card-text">
-        <h2>Enjoy on your TV.</h2>
-        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        <h2 class="text-lg">Enjoy on your TV.</h2>
+        <p class="text-md">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
       </div>
       <div class="card-img">
         <img src="img/tv.png" alt="TV">
@@ -36,6 +39,42 @@
       </div>
     </div>
   </div>
+
+  <!-- Questions -->
+  <section class="questions our-story-card">
+    <div class="container">
+      <h2 class="text-lg">Frequently Asked Questions</h2>
+      <ul class="faq-list">
+        <li id="faq-1" class="faq-list-item text-md">
+          <div class="faq-question question-box">
+            <span>What is Netflix?</span>
+            <i id="faq-1-icon" class="fas fa-plus"></i>
+          </div>
+          <div class="faq-answer question-box">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+            documentaries, and more on thousands of internet-connected devices.<br><br>You can watch as much as you
+            want,
+            whenever you want without a single commercial – all for one low monthly price. There's always something new
+            to
+            discover and new TV shows and movies are added every week!
+          </div>
+        </li>
+        <li id="faq-2" class="faq-list-item text-md">
+          <div class="faq-question question-box">
+            <span>How much does Netflix cost?</span>
+            <i id="faq-2-icon" class="fas fa-plus"></i>
+          </div>
+          <div class="faq-answer question-box">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one low fixed
+            monthly
+            fee. Plans start from 180,000 ₫ a month. No extra costs or contracts.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
