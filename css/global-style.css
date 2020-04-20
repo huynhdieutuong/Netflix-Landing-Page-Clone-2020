@@ -76,7 +76,7 @@ img {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  background: #f40612;
 }
 
 .btn-xl {
